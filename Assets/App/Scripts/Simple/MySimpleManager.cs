@@ -21,6 +21,9 @@ public class MySimpleManager : MonoBehaviour
     /// </summary>
     void Start()
     {
+        // モニターを消さない
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
+
         // cache
         for (int i = 0; i < 10; i++)
         {
@@ -43,7 +46,7 @@ public class MySimpleManager : MonoBehaviour
             var list = data.values;
             for (int i = 0; i < list.Length; i += 4)
             {
-                var x = float.Parse(list[i + 0].ToString());
+                var x = float.Parse(list[i + 0].ToString()) * -1;
                 var y = float.Parse(list[i + 1].ToString()) * -1;
                 var s = float.Parse(list[i + 2].ToString());
                 var t = float.Parse(list[i + 3].ToString());

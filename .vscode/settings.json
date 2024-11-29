@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "2408_Hokuyo_AR.sln"
+    "dotnet.defaultSolution": "hokuyoar.sln"
 }
